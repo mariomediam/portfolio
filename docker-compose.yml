@@ -1,0 +1,34 @@
+version: '3.8'
+
+
+# services:
+#     astro_initial2:
+#         ports:
+#             - 4321:4321        
+
+services:
+
+  frontend:
+    container_name: astro_initial
+    build:
+      context: superior-shepherd    
+      target: runtime
+    working_dir: /app
+    ports:
+      - 4321:4321
+    command: bash -c "npm run dev --verbose"
+    volumes:
+      - ./superior-shepherd:/app
+      - /app/node_modules
+    networks:
+      backend:
+        ipv4_address: 192.20.0.7
+    environment:
+       - CHOKIDAR_USEPOLLING=true
+
+networks:
+  backend:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.20.0.0/24

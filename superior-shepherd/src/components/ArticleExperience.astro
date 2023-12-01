@@ -1,0 +1,28 @@
+---
+import Icon from "./Icon.astro";
+const { title, measure, subtitle, description, icon } = Astro.props;
+---
+
+<article
+  class="p-4 max-w-xs border border-df-yellow text-df-text hover:bg-df-yellow hover:text-df-background transition-all duration-700 group"
+>
+  <h2 class="font-bold tracking-tight">{title}</h2>
+
+  <div class="grid grid-rows-2 grid-cols-[min-content_1fr]">
+    {
+      icon ? (
+        <div class="flex justify-end items-center p-0 m-0">
+          <Icon icon={icon} />
+        </div>
+      ) : (
+        <div />
+      )
+    }
+    <div class="text-3xl p-0 m-0">{measure}</div>
+    <div class="mt-0 pt-0"></div>
+    <div class="m-0 p-0 leading-none font-semibold">{subtitle}</div>
+  </div>
+  <p class="text-balance text-sm mt-1">
+    {description}
+  </p>
+</article>

@@ -1,0 +1,18 @@
+---
+import ArticleExperience from "./ArticleExperience.astro";
+import experience from "../data/experience";
+---
+
+<section class="bg-df-bg-section pt-5">
+    <h1 class="mb-4 text-df-text text-center underline underline-offset-8 text-2xl font-extrabold leading-none tracking-tight md:text-3xl lg:text-4xl">Experiencia</h1>
+
+    <p class="text-df-text text-center mt-5 mb-3">Municipalidad Provincial de Piura 2001-2023</p>
+
+    <div class="flex justify-around flex-wrap gap-5 p-3">
+        {experience.map(({title, measure, subtitle, description, icon}) => (
+            <ArticleExperience title={title} measure={measure} subtitle={subtitle} description={description} icon={icon}/>
+        ))
+        }       
+    </div>
+    
+</section>
