@@ -9,16 +9,15 @@ const { title, measure, subtitle, description, icon } = Astro.props;
   <h2 class="font-bold tracking-tight">{title}</h2>
 
   <div class="grid grid-rows-2 grid-cols-[min-content_1fr]">
-    <!-- {
+    {
       icon ? (
         <div class="flex justify-end items-center p-0 m-0">
           <Icon icon={icon} />
         </div>
-      ) : (
-        <div />
+      ) : (<div>
+        </div>
       )
-    } -->
-    <div></div>
+    }    
     <div class="text-3xl p-0 m-0">{measure}</div>
     <div class="mt-0 pt-0"></div>
     <div class="m-0 p-0 leading-none font-semibold">{subtitle}</div>
