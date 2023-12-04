@@ -1,23 +1,34 @@
 ---
-import Icon from "./Icon.astro";
-import Minor2 from "../icons/Minor2.astro";
+// import Icon from "./Icon.astro";
+// import Minor2 from "../icons/Minor2.astro";
 const { title, measure, subtitle, description, icon } = Astro.props;
-// import svgTest from "../icons/major.svg"
 
-// let svgContent;
-// if (icon) {
-//   const response = await fetch(`/src/icons/${icon}.svg`);
-//   svgContent = await response.text();
-// }
+// const pathSvg = icon ? "./src/icons/major.svg" : "";
+
+// console.log(pathSvg)
+
+const rutaAMiIconDestacado = `./src/icons/major.svg`
+
+const icons = await Astro.glob('../icons/*.svg');
+console.log("********icons[0]***********")
+console.log(icons[0])
+const miIconDestacado = icons.find(icon => icon.default.src.includes(rutaAMiIconDestacado));
+const pathImg = `./src/icons/${icon}.svg`
 ---
 
 <article
   class="p-4 max-w-xs border border-df-yellow text-df-text hover:bg-df-yellow hover:text-df-background transition-all duration-700 group"
 >
+<p>
+  <!-- <img src="./src/icons/major.svg" class="h-8" alt="Flowbite Logo" />  -->
+  <img src={pathImg} class="h-8" alt="Flowbite Logo" />
+  
+</p>
+
   <h2 class="font-bold tracking-tight">{title}</h2>  
 
   <div class="grid grid-rows-2 grid-cols-[min-content_1fr]">
-    {
+    <!-- {
       icon ? (
         <div class="flex justify-end items-center p-0 m-0">
           <Icon icon={icon} />
@@ -25,11 +36,11 @@ const { title, measure, subtitle, description, icon } = Astro.props;
       ) : (<div>
         </div>
       )
-    }    
-    <!-- <div>
-      <img src={svgContent} alt="image description" />;
-    </div> -->
-    <div class="text-3xl p-0 m-0">{measure}</div>
+    }     -->
+    <div>
+      <img src="./assets/logo.png" class="h-8" alt="Flowbite Logo" /> 
+    </div>
+    <div class="text-3xl p-0 m-0">{measure} </div>
     <div class="mt-0 pt-0"></div>
     <div class="m-0 p-0 leading-none font-semibold">{subtitle}</div>
   </div>

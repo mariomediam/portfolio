@@ -4,7 +4,7 @@ const experience = [
         "measure": "5M",
         "subtitle": "Documentos registrados",
         "description": "A la fecha, el sistema ha registrado exitosamente más de 5 millones de documentos, lo que ha generado notables beneficios en términos de eficiencia, organización y accesibilidad de la información.",
-        "icon": "major"
+        "icon": "minor"
       },
       {
         "title": "Sistema de licencias de conducir",
@@ -32,6 +32,7 @@ const experience = [
         "measure": "18+",
         "subtitle": "Años de experiencia",
         "description": "He alcanzado logros en la optimización del rendimiento de sistemas, implementando estrategias eficientes de respaldo y recuperación, lo que resultó en una notable reducción de tiempos de inactividad.",        
+        "icon": "major",
       },
       {
         "title": "Optimización de consultas SQL",
