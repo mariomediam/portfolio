@@ -16,12 +16,11 @@ const pathSvg = `/src/icons/${icon}.svg`;
   >
     {
       icon ? (
-        <div class="flex justify-end items-center p-0 m-0 w-10 h-10 text-3xl leading-none">
-          <Icon name={icon} class="leading-none p-0 m-0" />
+        <div class="flex justify-start items-center p-0 m-0 text-3xl leading-none">
+          {icon}
         </div>
       ) : (
-        <div>
-        </div>
+        <div></div>
       )
     }
 
