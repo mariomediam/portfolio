@@ -1,6 +1,4 @@
 ---
-// import Icon from "./Icon.astro";
-// import Minor2 from "../icons/Minor2.astro";
 const { title, measure, subtitle, description, icon } = Astro.props;
 
 const pathSvg = `/assets/icons/${icon}.svg`;
@@ -10,10 +8,10 @@ const pathSvg = `/assets/icons/${icon}.svg`;
 <article
   class="p-4 max-w-xs border border-df-yellow text-df-text hover:bg-df-yellow hover:text-df-background transition-all duration-700 group"
 >
-<p>
+<!-- <p>
   <img src={pathSvg} class="h-8" alt="Flowbite Logo" /> 
   
-</p>
+</p> -->
 
   <h2 class="font-bold tracking-tight">{title}</h2>  
 
@@ -27,8 +25,8 @@ const pathSvg = `/assets/icons/${icon}.svg`;
         </div>
       )
     }     -->
-    <div>
-      <img src="./assets/logo.png" class="h-8" alt="Flowbite Logo" /> 
+    <div class="flex justify-end items-center pb-0 mb-0 max-h w-6 transition-all">
+      <img class="stroke-df-text transition-all p-0 m-0" src={pathSvg}/> 
     </div>
     <div class="text-3xl p-0 m-0">{measure} </div>
     <div class="mt-0 pt-0"></div>
