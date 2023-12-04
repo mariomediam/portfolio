@@ -11,14 +11,14 @@ const experience = [
         "measure": "47K",
         "subtitle": "Licencias emitidas",
         "description": "Hemos logrado agilizar significativamente el proceso de obtención de licencias de conducir de vehículos menores, reduciendo los tiempos de espera y mejorando la experiencia de los usuarios.",
-        "icon": "major"
+        "icon": "math-greater"
       },
       {
         "title": "Sistema de Fiscalización",
         "measure": "112K",
         "subtitle": "Sanciones impuestas",
         "description": "Permite realizar un seguimiento detallado de las infracciones de tráfico y otros incidentes, facilitando la identificación de patrones, la asignación de recursos y la implementación de medidas preventivas.",
-        "icon": "major"
+        "icon": "math-lower"
       },
       {
         "title": "Sistema de licencias de funcionamiento",
