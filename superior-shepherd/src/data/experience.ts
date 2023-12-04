@@ -4,21 +4,21 @@ const experience = [
         "measure": "5M",
         "subtitle": "Documentos registrados",
         "description": "A la fecha, el sistema ha registrado exitosamente más de 5 millones de documentos, lo que ha generado notables beneficios en términos de eficiencia, organización y accesibilidad de la información.",
-        "icon": "minor"
+        "icon": "major"
       },
       {
         "title": "Sistema de licencias de conducir",
         "measure": "47K",
         "subtitle": "Licencias emitidas",
         "description": "Hemos logrado agilizar significativamente el proceso de obtención de licencias de conducir de vehículos menores, reduciendo los tiempos de espera y mejorando la experiencia de los usuarios.",
-        "icon": "math-greater"
+        "icon": "major"
       },
       {
         "title": "Sistema de Fiscalización",
         "measure": "112K",
         "subtitle": "Sanciones impuestas",
         "description": "Permite realizar un seguimiento detallado de las infracciones de tráfico y otros incidentes, facilitando la identificación de patrones, la asignación de recursos y la implementación de medidas preventivas.",
-        "icon": "math-lower"
+        "icon": "major"
       },
       {
         "title": "Sistema de licencias de funcionamiento",
@@ -32,7 +32,7 @@ const experience = [
         "measure": "18+",
         "subtitle": "Años de experiencia",
         "description": "He alcanzado logros en la optimización del rendimiento de sistemas, implementando estrategias eficientes de respaldo y recuperación, lo que resultó en una notable reducción de tiempos de inactividad.",        
-        "icon": "major",
+        
       },
       {
         "title": "Optimización de consultas SQL",

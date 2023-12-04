@@ -1,60 +1,43 @@
 ---
-
-import { Image } from "astro:assets";
-import { Icon } from 'astro-icon';
+import { Icon } from "astro-icon";
 
 const { title, measure, subtitle, description, icon } = Astro.props;
 
 const pathSvg = `/src/icons/${icon}.svg`;
 ---
-<!-- <Icon name="/src/icons/math-greater.svg"/> -->
+
 <article
   class="p-4 max-w-xs border border-df-yellow text-df-text hover:bg-df-yellow hover:text-df-background transition-all duration-700 group"
 >
-  <!-- <p>
-  <img src={pathSvg} class="h-8" alt="Flowbite Logo" /> 
-  
-</p> -->
-  <!-- <Image src={pathSvg} /> -->
-  <Icon name="major" class="min-w-200 min-h-200 fill-blue"/>
-
-
   <h2 class="font-bold tracking-tight">{title}</h2>
 
-  <div class="grid grid-rows-2 grid-cols-[min-content_1fr]">
-    <!-- {
+  <div
+    class="grid grid-rows-[min-content_min-content] grid-cols-[min-content_1fr]"
+  >
+    {
       icon ? (
-        <div class="flex justify-end items-center p-0 m-0">
-          <Icon icon={icon} />
+        <div class="flex justify-end items-center p-0 m-0 w-10 h-10 text-3xl leading-none">
+          <Icon name={icon} class="leading-none p-0 m-0" />
         </div>
-      ) : (<div>
+      ) : (
+        <div>
         </div>
       )
-    }     -->
-    
-      <!-- <img class="stroke-df-text transition-all p-0 m-0" src={pathSvg}/>  -->
-      <!-- <Image class="hover:text-df-text text-blue-500 p-0 m-0 stroke-cyan-500" src={pathSvg} alt="texto descriptivo" width="32"
-      height="32" pictureAttributes={{style: "background-color: red;"}}  /> -->
-      <!-- <Picture src={pathSvg} alt="Una descripción de mi imagen." pictureAttributes={{style: "background-color: red;"}} /> -->
-      <div>
-aaaaaa
-        <Icon name="major" class="min-w-200 min-h-200 fill-blue border"/>
-      </div>
-    
+    }
+
     <div class="text-3xl p-0 m-0">{measure}</div>
     <div class="mt-0 pt-0"></div>
     <div class="m-0 p-0 leading-none font-semibold">{subtitle}</div>
   </div>
-  <p class="text-balance text-sm mt-1">
+  <p class="text-balance text-sm mt-5">
     {description}
   </p>
 </article>
 
-<style>
-  img :global(img), svg {
+<!-- <style>
+  img :global(img),
+  svg {
     margin-block: 2.5rem;
     border-radius: 0.75rem;
-
   }
-</style>
-
+</style> -->
