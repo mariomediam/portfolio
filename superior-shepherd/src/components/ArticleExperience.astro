@@ -12,12 +12,12 @@ const { title, measure, subtitle, description, icon } = Astro.props;
 const rutaAMiIconDestacado = `src/icons/${icon}.svg`
 
 const icons = await Astro.glob('../icons/*.svg');
-console.log("********icons[0] split***********")
-console.log(icons[0].default.src.split("?")[0])
+// console.log("********icons[0] split***********")
+// console.log(icons[0].default.src.split("?")[0])
 const miIconDestacado = icons.find(icon => icon.default.src.includes(rutaAMiIconDestacado));
 const pathImg = `./src/icons/${icon}.svg`
-console.log("********** miIconDestacado **********")
-console.log(miIconDestacado.default.src.split("?")[0])
+// console.log("********** miIconDestacado **********")
+// console.log(miIconDestacado.default.src.split("?")[0])
 ---
 
 <article
