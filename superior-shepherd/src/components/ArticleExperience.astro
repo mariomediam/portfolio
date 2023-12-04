@@ -3,17 +3,21 @@
 // import Minor2 from "../icons/Minor2.astro";
 const { title, measure, subtitle, description, icon } = Astro.props;
 
+
+
 // const pathSvg = icon ? "./src/icons/major.svg" : "";
 
 // console.log(pathSvg)
 
-const rutaAMiIconDestacado = `./src/icons/major.svg`
+const rutaAMiIconDestacado = `src/icons/${icon}.svg`
 
 const icons = await Astro.glob('../icons/*.svg');
-console.log("********icons[0]***********")
-console.log(icons[0])
+console.log("********icons[0] split***********")
+console.log(icons[0].default.src.split("?")[0])
 const miIconDestacado = icons.find(icon => icon.default.src.includes(rutaAMiIconDestacado));
 const pathImg = `./src/icons/${icon}.svg`
+console.log("********** miIconDestacado **********")
+console.log(miIconDestacado.default.src.split("?")[0])
 ---
 
 <article
@@ -21,7 +25,8 @@ const pathImg = `./src/icons/${icon}.svg`
 >
 <p>
   <!-- <img src="./src/icons/major.svg" class="h-8" alt="Flowbite Logo" />  -->
-  <img src="/@fs/app/src/icons/major.svg" class="h-8" alt="Flowbite Logo" />
+  <!-- <img src="/@fs/app/src/icons/major.svg" class="h-8" alt="Flowbite Logo" /> -->
+  <img src={miIconDestacado.default.src.split("?")[0]} alt="descripción de la imagen"/>
   
 </p>
 
