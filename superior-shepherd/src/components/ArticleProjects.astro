@@ -1,0 +1,30 @@
+---
+import { Image } from "astro:assets";
+
+const { title, description, image } = Astro.props;
+---
+
+<article
+  class="bg-df-title md:grid md:grid-rows-[1fr_min-content] md:grid-cols-[2fr_3fr] rounded-lg p-6 gap-4 my-6"
+>
+  <div class="flex flex-col justify-center h-full text-df-background">
+    <h3
+      class="text-1xl font-extrabold leading-none tracking-tight md:text-2xl lg:text-3xl"
+    >
+      {title}
+    </h3>
+    <p class="mt-2 text-1xl text-balance">
+      {description}
+    </p>
+  </div>
+  <div class="md:row-span-2 p-3 border">
+    <Image
+      src={image}
+      alt="Formulario de licencias provisionales"
+      class="border"
+    />
+  </div>
+  <div class="flex gap-2 items-end justify-center lg:justify-between flex-wrap">
+    <slot />
+  </div>
+</article>

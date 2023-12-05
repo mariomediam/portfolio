@@ -1,6 +1,8 @@
 ---
 import { Icon } from "astro-icon";
 import { Image } from "astro:assets";
+
+import ArticleProjects from "./ArticleProjects.astro";
 import image1 from "../screens/provisional1.jpg";
 ---
 
@@ -12,41 +14,174 @@ import image1 from "../screens/provisional1.jpg";
     Proyectos
   </h1>
   <p class="text-df-text mt-5 mb-3">Algunos de mis trabajos</p>
-  <article
-    class="bg-df-title md:grid md:grid-rows-[1fr_min-content] md:grid-cols-[2fr_3fr] rounded-lg p-6 gap-4"
-  >
-    <div class="flex flex-col justify-center h-full text-df-background">
-      <h3
-        class="text-1xl font-extrabold leading-none tracking-tight md:text-2xl lg:text-3xl"
+
+  <div id="cards">
+    <div class="card" id="card_1">
+      <ArticleProjects
+        title="Licencias provisionales"
+        description="Permite a los emprendedores obtener rápidamente las autorizaciones necesarias para desplegar sus ideas y proyectos en los espacios públicos de la ciudad de Piura - Perú."
+        image={image1}
+        class="card__content"
       >
-        Licencias provisionales
-      </h3>
-      <p class="mt-2 text-1xl text-balance">
-        Permite a los emprendedores obtener rápidamente las autorizaciones
-        necesarias para desplegar sus ideas y proyectos en los espacios públicos
-        de la ciudad de Piura - Perú.
-      </p>
+        <>
+          <div class="flex gap-1">
+            <Icon name="react" class="" />
+            <Icon name="redux" class="" />
+            <Icon name="bootstrap" class="" />
+          </div>
+          <div class="flex">
+            <Icon name="django" class="py-1" />
+            <Icon name="sql-server" class="py-0.5" />
+          </div>
+          <div class="flex">
+            <Icon name="apache" class="p-0 m-0" />
+            <Icon name="ubuntu" class="p-0 m-0" />
+          </div>
+        </>
+      </ArticleProjects>
     </div>
-    <div class="md:row-span-2 p-3">
-      <Image src={image1} alt="Formulario de licencias provisionales" class="w-auto mx-auto" />
+
+    <div class="card" id="card_2">
+      <ArticleProjects
+        title="Licencias provisionales"
+        description="Permite a los emprendedores obtener rápidamente las autorizaciones necesarias para desplegar sus ideas y proyectos en los espacios públicos de la ciudad de Piura - Perú."
+        image={image1}
+        class="card__content"
+      >
+        <>
+          <div class="flex gap-1">
+            <Icon name="react" class="" />
+            <Icon name="redux" class="" />
+            <Icon name="bootstrap" class="" />
+          </div>
+          <div class="flex">
+            <Icon name="django" class="py-1" />
+            <Icon name="sql-server" class="py-0.5" />
+          </div>
+          <div class="flex">
+            <Icon name="apache" class="p-0 m-0" />
+            <Icon name="ubuntu" class="p-0 m-0" />
+          </div>
+        </>
+      </ArticleProjects>
     </div>
-    <div class="flex gap-2 items-end justify-center lg:justify-between flex-wrap">
-      <div class="flex gap-1">
-        <Icon name="react" class="" />
-        <Icon name="redux" class="" />
-        <Icon name="bootstrap" class="" />
-      </div>
-      <div class="flex">
-        <Icon name="django" class="py-1" />
-        <Icon name="sql-server" class="py-0.5" />
-      </div>
-      <div class="flex">
-        <Icon name="apache" class="p-0 m-0" />
-        <Icon name="ubuntu" class="p-0 m-0" />
-      </div>
+
+    <div class="card" id="card_3">
+      <ArticleProjects
+        title="Licencias provisionales"
+        description="Permite a los emprendedores obtener rápidamente las autorizaciones necesarias para desplegar sus ideas y proyectos en los espacios públicos de la ciudad de Piura - Perú."
+        image={image1}
+        class="card__content"
+      >
+        <>
+          <div class="flex gap-1">
+            <Icon name="react" class="" />
+            <Icon name="redux" class="" />
+            <Icon name="bootstrap" class="" />
+          </div>
+          <div class="flex">
+            <Icon name="django" class="py-1" />
+            <Icon name="sql-server" class="py-0.5" />
+          </div>
+          <div class="flex">
+            <Icon name="apache" class="p-0 m-0" />
+            <Icon name="ubuntu" class="p-0 m-0" />
+          </div>
+        </>
+      </ArticleProjects>
     </div>
-  </article>
+
+    <div class="card" id="card_4">
+      <ArticleProjects
+        title="Licencias provisionales"
+        description="Permite a los emprendedores obtener rápidamente las autorizaciones necesarias para desplegar sus ideas y proyectos en los espacios públicos de la ciudad de Piura - Perú."
+        image={image1}
+        class="card__content"
+      >
+        <>
+          <div class="flex gap-1">
+            <Icon name="react" class="" />
+            <Icon name="redux" class="" />
+            <Icon name="bootstrap" class="" />
+          </div>
+          <div class="flex">
+            <Icon name="django" class="py-1" />
+            <Icon name="sql-server" class="py-0.5" />
+          </div>
+          <div class="flex">
+            <Icon name="apache" class="p-0 m-0" />
+            <Icon name="ubuntu" class="p-0 m-0" />
+          </div>
+        </>
+      </ArticleProjects>
+    </div>
+  </div>
+
+ 
 </section>
+
+<!-- <ul id="cards">
+  <li class="card" id="card_1">
+    <div class="card__content">
+      <div>
+        <h2>Card One</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p><a href="#top" class="btn btn--accent">Read more</a></p>
+      </div>
+      <figure>
+        <img
+          src="https://scroll-driven-animations.style/demos/stacking-cards/shared/img-2.jpg"
+          alt="Image description"
+        />
+      </figure>
+    </div>
+  </li>
+  <li class="card" id="card_2">
+    <div class="card__content">
+      <div>
+        <h2>Card Two</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p><a href="#top" class="btn btn--accent">Read more</a></p>
+      </div>
+      <figure>
+        <img
+          src="https://scroll-driven-animations.style/demos/stacking-cards/shared/img-2.jpg"
+          alt="Image description"
+        />
+      </figure>
+    </div>
+  </li>
+  <li class="card" id="card_3">
+    <div class="card__content">
+      <div>
+        <h2>Card Three</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p><a href="#top" class="btn btn--accent">Read more</a></p>
+      </div>
+      <figure>
+        <img
+          src="https://scroll-driven-animations.style/demos/stacking-cards/shared/img-2.jpg"
+          alt="Image description"
+        />
+      </figure>
+    </div>
+  </li>
+  <li class="card" id="card_4">
+    <div class="card__content">
+      <div>
+        <h2>Card Four</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p><a href="#top" class="btn btn--accent">Read more</a></p>
+      </div>
+      <figure>
+        <img
+          src="https://scroll-driven-animations.style/demos/stacking-cards/shared/img-2.jpg"
+          alt="Image description"
+        />
+      </figure>
+    </div>
+  </li>
+</ul> -->
 
 <style lang="css">
   [astro-icon] {
