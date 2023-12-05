@@ -1,18 +1,56 @@
 ---
+import { Icon } from "astro-icon";
+import { Image } from "astro:assets";
+import image1 from "../screens/provisional1.jpg";
 ---
 
 <section class="mt-12 px-7 mx-7">
-    <!-- <h1 class="mb-4 text-df-text underline underline-offset-8 text-2xl font-extrabold leading-none tracking-tight md:text-3xl lg:text-4xl">Proyectos</h1> -->
-    <h1 class="mb-4 text-df-text underline underline-offset-8 text-2xl font-extrabold leading-none tracking-tight md:text-3xl lg:text-4xl">Proyectos</h1>
-    <p class="text-df-text mt-5 mb-3">Algunos de mis trabajos</p>
-    <article class="bg-df-title grid grid-rows-[min-content_min-content] grid-cols-[2fr_3fr]">
-            <div class="p-3 border text-df-background">
-                <h3 class="text-1xl font-extrabold leading-none tracking-tight md:text-2xl lg:text-3xl">Licencias provisionales</h3>
-                <p class="mt-2 text-1xl text-balance">Permite a los emprendedores obtener rápidamente las autorizaciones necesarias para desplegar sus ideas y proyectos en los espacios públicos de la ciudad de Piura - Perú.</p>
-            </div>
-            <div class="border row-span-2">02</div>
-            <div class="border">03</div>
-    </article>
-
-    
+  <!-- <h1 class="mb-4 text-df-text underline underline-offset-8 text-2xl font-extrabold leading-none tracking-tight md:text-3xl lg:text-4xl">Proyectos</h1> -->
+  <h1
+    class="mb-4 text-df-text underline underline-offset-8 text-2xl font-extrabold leading-none tracking-tight md:text-3xl lg:text-4xl"
+  >
+    Proyectos
+  </h1>
+  <p class="text-df-text mt-5 mb-3">Algunos de mis trabajos</p>
+  <article
+    class="bg-df-title grid md:grid-rows-[1fr_min-content] md:grid-cols-[2fr_3fr] rounded-lg p-6 gap-4"
+  >
+    <div class="flex flex-col justify-center h-full text-df-background">
+      <h3
+        class="text-1xl font-extrabold leading-none tracking-tight md:text-2xl lg:text-3xl"
+      >
+        Licencias provisionales
+      </h3>
+      <p class="mt-2 text-1xl text-balance">
+        Permite a los emprendedores obtener rápidamente las autorizaciones
+        necesarias para desplegar sus ideas y proyectos en los espacios públicos
+        de la ciudad de Piura - Perú.
+      </p>
+    </div>
+    <div class="md:row-span-2 border">
+      <Image src={image1} alt="Formulario de licencias provisionales" class="h-auto max-w-lg mx-auto" />
+    </div>
+    <div class="flex gap-2 items-end justify-between">
+      <div class="flex gap-1">
+        <Icon name="react" class="" />
+        <Icon name="redux" class="" />
+        <Icon name="bootstrap" class="" />
+      </div>
+      <div class="flex">
+        <Icon name="django" class="py-1" />
+        <Icon name="sql-server" class="py-0.5" />
+      </div>
+      <div class="flex">
+        <Icon name="apache" class="p-0 m-0" />
+        <Icon name="ubuntu" class="p-0 m-0" />
+      </div>
+    </div>
+  </article>
 </section>
+
+<style lang="css">
+  [astro-icon] {
+    width: 40px;
+    height: 40px;
+  }
+</style>
