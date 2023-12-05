@@ -13,7 +13,7 @@ import image1 from "../screens/provisional1.jpg";
   </h1>
   <p class="text-df-text mt-5 mb-3">Algunos de mis trabajos</p>
   <article
-    class="bg-df-title grid md:grid-rows-[1fr_min-content] md:grid-cols-[2fr_3fr] rounded-lg p-6 gap-4"
+    class="bg-df-title md:grid md:grid-rows-[1fr_min-content] md:grid-cols-[2fr_3fr] rounded-lg p-6 gap-4"
   >
     <div class="flex flex-col justify-center h-full text-df-background">
       <h3
@@ -27,10 +27,10 @@ import image1 from "../screens/provisional1.jpg";
         de la ciudad de Piura - Perú.
       </p>
     </div>
-    <div class="md:row-span-2 border">
-      <Image src={image1} alt="Formulario de licencias provisionales" class="h-auto max-w-lg mx-auto" />
+    <div class="md:row-span-2 p-3">
+      <Image src={image1} alt="Formulario de licencias provisionales" class="w-auto mx-auto" />
     </div>
-    <div class="flex gap-2 items-end justify-between">
+    <div class="flex gap-2 items-end justify-center lg:justify-between flex-wrap">
       <div class="flex gap-1">
         <Icon name="react" class="" />
         <Icon name="redux" class="" />
