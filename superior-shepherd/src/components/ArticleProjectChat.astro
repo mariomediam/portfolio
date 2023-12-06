@@ -1,0 +1,122 @@
+---
+import { Icon } from "astro-icon";
+---
+
+<article
+  class="bg-df-title md:grid md:grid-rows-[1fr_min-content] md:grid-cols-[2fr_3fr] rounded-lg p-6 gap-4 my-6"
+>
+  <!-- Title and description -->
+  <div class="flex flex-col justify-center h-full text-df-background">
+    <h3
+      class="text-1xl font-extrabold leading-none tracking-tight md:text-2xl lg:text-3xl"
+    >
+    Chatbot inteligente
+    </h3>
+    <p class="mt-2 text-1xl text-balance">
+      Entrenado con los procedimientos administrativos y servicios exclusivos ofrecidos por la Municipalidad, permite a los ciudadanos realizar consultas en lenguaje natural, simplificando drásticamente la comprensión y navegación a través de la complejidad de la información administrativa.
+    </p>
+  </div>
+  <!-- Images Carousel wrapper -->
+  <div class="md:row-span-2 p-3">
+    <img class="w-auto h-full" src="/assets/screens/chat1.webp" alt="image description">
+  </div>
+  <!-- Icons -->
+  <div class="flex gap-2 items-end justify-center lg:justify-between flex-wrap p-0 m-0">
+    <div class="flex gap-1 pb-1.5">
+      <div class="relative group text-center">
+        <Icon
+          name="react"
+          class="p-0 m-0 transition-all duration-500 ease-in-out group-hover:-translate-y-2"
+        />
+        <p
+          class="absolute top-0 w-full text-center text-xs font-semibold mt-3 opacity-0 transition-opacity duration-0 group-hover:translate-y-full group-hover:opacity-100 group-hover:duration-500"
+        >
+          React
+        </p>
+      </div>
+
+      <div class="relative group text-center">
+        <Icon
+          name="openai"
+          class="p-0 m-0 transition-all duration-500 ease-in-out group-hover:-translate-y-2"
+        />
+        <p
+          class="absolute top-0 w-full text-center text-xs font-semibold mt-3 opacity-0 transition-opacity duration-0 group-hover:translate-y-full group-hover:opacity-100 group-hover:duration-500"
+        >
+          OpenAI
+        </p>
+      </div>
+
+      
+    </div>
+
+    <div class="flex pb-1.5">
+      <div class="relative group">
+        <Icon
+          name="django"
+          class="py-1 m-0 transition-all duration-500 ease-in-out group-hover:-translate-y-2"
+        />
+        <p
+          class="absolute top-0 w-full text-center text-xs font-semibold mt-3 opacity-0 transition-opacity duration-0 group-hover:translate-y-full group-hover:opacity-100 group-hover:duration-500"
+        >
+          Django
+        </p>
+      </div>
+      <div class="relative group px-2 mx-auto text-center">
+        <Icon
+          name="chroma"
+          class="py-0.5 m-0 transition-all duration-500 ease-in-out group-hover:-translate-y-2 text-blue-500"
+        />
+        <p
+          class="absolute top-0 w-full text-center text-xs font-semibold mt-3 opacity-0 transition-opacity duration-0 group-hover:translate-y-full group-hover:opacity-100 group-hover:duration-500"
+        >
+        ChromaDB
+        </p>
+      </div>
+      <div class="relative group ">
+        <Icon
+          name="mysql"
+          class="py-0.5 m-0 transition-all duration-500 ease-in-out group-hover:-translate-y-2"
+        />
+        <p
+          class="absolute top-0 w-full text-center text-xs font-semibold mt-3 opacity-0 transition-opacity duration-0 group-hover:translate-y-full group-hover:opacity-100 group-hover:duration-500"
+        >
+        MySQL
+        </p>
+      </div>
+    </div>
+
+    <div class="flex pb-1.5">
+      <div class="relative group">
+        <Icon
+          name="apache"
+          class="p-0 m-0 transition-all duration-500 ease-in-out group-hover:-translate-y-2"
+        />
+        <p
+          class="absolute top-0 w-full text-center text-xs font-semibold mt-3 opacity-0 transition-opacity duration-0 group-hover:translate-y-full group-hover:opacity-100 group-hover:duration-500"
+        >
+          Apache
+        </p>
+      </div>
+      <div class="relative group">
+        <Icon
+          name="ubuntu"
+          class="p-0 m-0 transition-all duration-500 ease-in-out group-hover:-translate-y-2"
+        />
+        <p
+          class="absolute top-0 w-full text-center text-xs font-semibold mt-3 opacity-0 transition-opacity duration-0 group-hover:translate-y-full group-hover:opacity-100 group-hover:duration-500"
+        >
+          Ubuntu
+        </p>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+<style lang="css">
+  [astro-icon] {
+    width: 40px;
+    height: 40px;
+  }
+</style>
