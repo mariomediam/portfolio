@@ -6,7 +6,7 @@ import ArticleProjects from "./ArticleProjects.astro";
 import image1 from "../screens/provisional1.jpg";
 ---
 
-<section class="mt-12 px-7 mx-7">
+<section class="mt-12 px-7 mx-7 max-w-[1000px] mx-auto">
   <!-- <h1 class="mb-4 text-df-text underline underline-offset-8 text-2xl font-extrabold leading-none tracking-tight md:text-3xl lg:text-4xl">Proyectos</h1> -->
   <h1
     class="mb-4 text-df-text underline underline-offset-8 text-2xl font-extrabold leading-none tracking-tight md:text-3xl lg:text-4xl"
@@ -25,17 +25,60 @@ import image1 from "../screens/provisional1.jpg";
       >
         <>
           <div class="flex gap-1">
-            <Icon name="react" class="" />
-            <Icon name="redux" class="" />
-            <Icon name="bootstrap" class="" />
+            
+            
+            <!-- <div class="group">              
+              <Icon name="react" class="" />
+              <p class="p-0 m-0 text-df-background text-xs text-center font-semibold underline leading-none invisible group-hover:visible">React</p>
+            </div> -->
+
+            <div class="relative group text-center">
+              <Icon name="react" class="p-0 m-0 transition-all duration-500 ease-in-out group-hover:-translate-y-2" />                    
+              <p class="absolute top-0 w-full text-center text-xs font-semibold mt-3 opacity-0 transition-opacity duration-0 group-hover:translate-y-full group-hover:opacity-100 group-hover:duration-500">React</p>
+            </div> 
+
+
+            <div class="relative group text-center">
+              <Icon name="redux" class="p-0 m-0 transition-all duration-500 ease-in-out group-hover:-translate-y-2" />                    
+              <p class="absolute top-0 w-full text-center text-xs font-semibold mt-3 opacity-0 transition-opacity duration-0 group-hover:translate-y-full group-hover:opacity-100 group-hover:duration-500">Redux</p>
+            </div> 
+
+            <!-- <div class="group">              
+              <Icon name="redux" class="" />
+              <p class="p-0 m-0 text-df-background text-xs text-center font-semibold underline leading-none invisible group-hover:visible">Redux</p>
+            </div> -->
+            
+            <!-- <div class="group">              
+              <Icon name="bootstrap" class="" />
+              <p class="p-0 m-0 text-df-background text-xs text-center font-semibold underline leading-none invisible group-hover:visible">Bootstrap</p>
+            </div> -->
+
+            <div class="relative group text-center">
+              <Icon name="bootstrap" class="p-0 m-0 transition-all duration-500 ease-in-out group-hover:-translate-y-2" />                    
+              <p class="absolute top-0 w-full text-center text-xs font-semibold mt-3 opacity-0 transition-opacity duration-0 group-hover:translate-y-full group-hover:opacity-100 group-hover:duration-500">Bootstrap</p>
+            </div> 
           </div>
-          <div class="flex">
-            <Icon name="django" class="py-1" />
-            <Icon name="sql-server" class="py-0.5" />
+
+          <div class="flex">            
+            <div class="relative group">
+              <Icon name="django" class="py-1 m-0 transition-all duration-500 ease-in-out group-hover:-translate-y-2" />                  
+              <p class="absolute top-0 w-full text-center text-xs font-semibold mt-3 opacity-0 transition-opacity duration-0 group-hover:translate-y-full group-hover:opacity-100 group-hover:duration-500">Django</p>
+            </div>  
+            <div class="relative group">
+              <Icon name="sql-server" class="py-0.5 m-0 transition-all duration-500 ease-in-out group-hover:-translate-y-2" />                  
+              <p class="absolute top-0 w-full text-center text-xs font-semibold mt-3 opacity-0 transition-opacity duration-0 group-hover:translate-y-full group-hover:opacity-100 group-hover:duration-500">MSSQL</p>
+            </div>  
           </div>
-          <div class="flex">
-            <Icon name="apache" class="p-0 m-0" />
-            <Icon name="ubuntu" class="p-0 m-0" />
+
+          <div class="flex">                        
+            <div class="relative group">
+              <Icon name="apache" class="p-0 m-0 transition-all duration-500 ease-in-out group-hover:-translate-y-2" />                  
+              <p class="absolute top-0 w-full text-center text-xs font-semibold mt-3 opacity-0 transition-opacity duration-0 group-hover:translate-y-full group-hover:opacity-100 group-hover:duration-500">Apache</p>
+            </div>                      
+            <div class="relative group">
+              <Icon name="ubuntu" class="p-0 m-0 transition-all duration-500 ease-in-out group-hover:-translate-y-2" />                    
+              <p class="absolute top-0 w-full text-center text-xs font-semibold mt-3 opacity-0 transition-opacity duration-0 group-hover:translate-y-full group-hover:opacity-100 group-hover:duration-500">Ubuntu</p>
+            </div>
           </div>
         </>
       </ArticleProjects>
