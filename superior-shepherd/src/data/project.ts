@@ -15,12 +15,10 @@ const project = [
       {
         image: "react",
         name: "React",
-        size: { width: "40px", height: "40px" },
       },
       {
         image: "redux",
         name: "Redux",
-        size: { width: "40px", height: "40px" },
       },
       {
         image: "bootstrap",
@@ -35,17 +33,14 @@ const project = [
       {
         image: "sql-server",
         name: "MSSQL",
-        size: { width: "40px", height: "40px" },
       },
       {
         image: "apache",
         name: "Apache",
-        size: { width: "40px", height: "40px" },
       },
       {
         image: "ubuntu",
         name: "Ubuntu",
-        size: { width: "40px", height: "40px" },
       },
     ],
   },
@@ -65,37 +60,32 @@ const project = [
       {
         image: "react",
         name: "React",
-        size: { width: "40px", height: "40px" },
       },
       {
         image: "redux",
         name: "Redux",
-        size: { width: "40px", height: "40px" },
       },
       {
         image: "bootstrap",
         name: "Bootstrap",
-        size: { width: "40px", height: "40px" },
+        size: { width: "42px", height: "42px" },
       },
       {
         image: "django",
         name: "Django",
-        paddingAndMargin: "py-0.5 m-0",
+        size: { width: "35px", height: "35px" },
       },
       {
         image: "sql-server",
         name: "MSSQL",
-        size: { width: "40px", height: "40px" },
       },
       {
         image: "apache",
         name: "Apache",
-        size: { width: "40px", height: "40px" },
       },
       {
         image: "ubuntu",
         name: "Ubuntu",
-        size: { width: "40px", height: "40px" },
       },
     ],
   },
@@ -114,37 +104,32 @@ const project = [
       {
         image: "react",
         name: "React",
-        size: { width: "40px", height: "40px" },
       },
       {
         image: "redux",
         name: "Redux",
-        size: { width: "40px", height: "40px" },
       },
       {
         image: "bootstrap",
         name: "Bootstrap",
-        size: { width: "40px", height: "40px" },
+        size: { width: "42px", height: "42px" },
       },
       {
         image: "django",
         name: "Django",
-        paddingAndMargin: "py-0.5 m-0",
+        size: { width: "35px", height: "35px" },
       },
       {
         image: "sql-server",
         name: "MSSQL",
-        size: { width: "40px", height: "40px" },
       },
       {
         image: "apache",
         name: "Apache",
-        size: { width: "40px", height: "40px" },
       },
       {
         image: "ubuntu",
         name: "Ubuntu",
-        size: { width: "40px", height: "40px" },
       },
     ],
   },
@@ -159,37 +144,32 @@ const project = [
       {
         image: "react",
         name: "React",
-        size: { width: "40px", height: "40px" },
       },
       {
-        image: "redux",
-        name: "Redux",
-        size: { width: "40px", height: "40px" },
-      },
-      {
-        image: "bootstrap",
-        name: "Bootstrap",
-        size: { width: "40px", height: "40px" },
-      },
+        image: "openai",
+        name: "OpenAI",
+      },      
       {
         image: "django",
         name: "Django",
-        size: { width: "40px", height: "40px" },
+        size: { width: "35px", height: "35px" },
       },
       {
-        image: "sql-server",
-        name: "MSSQL",
-        size: { width: "40px", height: "40px" },
+        image: "chroma",
+        name: "ChromaDB",
+        size: { width: "45px", height: "45px" },
+      },
+      {
+        image: "mysql",
+        name: "MySQL",
       },
       {
         image: "apache",
         name: "Apache",
-        size: { width: "40px", height: "40px" },
       },
       {
         image: "ubuntu",
         name: "Ubuntu",
-        size: { width: "40px", height: "40px" },
       },
     ],
   },
