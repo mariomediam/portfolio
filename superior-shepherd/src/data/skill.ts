@@ -1,5 +1,25 @@
 const skill = [
   {
+    image: "html",
+    name: "HTML",
+  },
+  {
+    image: "css",
+    name: "CSS",
+  },
+  {
+    image: "bootstrap",
+    name: "Bootstrap",    
+  },
+  {
+    image: "tailwind",
+    name: "Tailwind",    
+  },
+  {
+    image: "java-script",
+    name: "JavaScript",    
+  },
+  {
     image: "react",
     name: "React",
   },
@@ -8,25 +28,46 @@ const skill = [
     name: "Redux",
   },
   {
-    image: "bootstrap",
-    name: "Bootstrap",    
+    image: "figma",
+    name: "Figma",
+  }, 
+  {
+    image: "sql-server",
+    name: "MSSQL",
+  },
+  {
+    image: "mysql",
+    name: "MySQL",
+  },
+  {
+    image: "postgresql",
+    name: "PostgreSQL",
+  },
+  {
+    image: "python",
+    name: "Python",
   },
   {
     image: "django",
     name: "Django",    
   },
   {
-    image: "sql-server",
-    name: "MSSQL",
+    image: "rest-api",
+    name: "REST API",    
   },
   {
-    image: "apache",
-    name: "Apache",
+    image: "openai",
+    name: "OpenAI API",    
   },
   {
-    image: "ubuntu",
-    name: "Ubuntu",
+    image: "github",
+    name: "GitHub",    
   },
+  
+  {
+    image: "docker",
+    name: "Docker",
+  }
   ]
 
 export default skill;    
