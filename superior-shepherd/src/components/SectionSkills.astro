@@ -1,5 +1,4 @@
 ---
-import Atropos from 'atropos';
 import skill from "../data/skill";
 import ArticleSkill from "./ArticleSkill.astro";
 ---
@@ -25,6 +24,9 @@ import ArticleSkill from "./ArticleSkill.astro";
 
 <script src="/css/atropos.min.js" is:inline></script>
 <script>
+
+  import Atropos from 'atropos';
+
   const elements = document.querySelectorAll('.my-atropos');
   elements.forEach((el) => {
     Atropos({ el });
