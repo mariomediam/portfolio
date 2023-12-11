@@ -5,12 +5,12 @@ export default {
 	theme: {
 		extend: {		
 		  colors: {
-			'df-background': '#252734',
-			'df-title': '#6B79AC',
-			'df-link': '#F4AC39',
-			'df-text': '#CCD3E3',			
-			'df-bg-section': '#404040',	
-			'df-yellow': {				
+			'dfBackground': '#252734',
+			'dfTitle': '#6B79AC',
+			'dfLink': '#F4AC39',
+			'dfText': '#CCD3E3',			
+			'dfBgSection': '#404040',	
+			'dfYellow': {				
 				DEFAULT: '#FCCC71',
 				dark: '#d1ab65',
 			  },

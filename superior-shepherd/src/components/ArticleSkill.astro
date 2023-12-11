@@ -1,0 +1,36 @@
+---
+import { Icon } from "astro-icon";
+
+const { ability } = Astro.props;
+const { image, name, size } = ability;
+const { width = "80px", height = "80px" } = size || {};
+---
+
+
+<!-- main Atropos container (required), add your custom class here -->
+<div class="atropos my-atropos">
+  <!-- scale container (required) -->
+  <div class="atropos-scale">
+    <!-- rotate container (required) -->
+    <div class="atropos-rotate">
+      <!-- inner container (required) -->
+      <div class="atropos-inner">
+        <div class="bg-dfBackground p-3 rounded">
+          <Icon
+            name={image}
+            class="p-0 m-0"
+            style={`width: ${width}; height: ${height};`}
+          />
+          <p
+            class="w-full text-center text-xs font-semibold"
+          >
+            {name}
+          </p>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+
