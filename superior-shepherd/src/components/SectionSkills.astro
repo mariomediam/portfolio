@@ -29,6 +29,6 @@ import ArticleSkill from "./ArticleSkill.astro";
 
   const elements = document.querySelectorAll('.my-atropos');
   elements.forEach((el) => {
-    Atropos({ el });
+    Atropos({ el: el as HTMLElement });
   });
 </script>
