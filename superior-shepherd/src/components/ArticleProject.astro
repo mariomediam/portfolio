@@ -1,14 +1,15 @@
 ---
-import { Icon } from "astro-icon";
 import ArticleProjectCarousel from "./ArticleProjectCarousel.astro";
 import ArticleProjectImage from "./ArticleProjectImage.astro";
 import ArticleProjectTechnology from "./ArticleProjectTechnology.astro";
-const { title="", description="", bg_color="", text_color="", images = [], technologies = []} =
-  Astro.props;
-
-console.log("********** inicio technologies ******************");
-console.log(technologies);
-console.log("*********** fin technologies *****************");
+const {
+  title = "",
+  description = "",
+  bg_color = "",
+  text_color = "",
+  images = [],
+  technologies = [],
+} = Astro.props;
 ---
 
 <article
@@ -37,12 +38,10 @@ console.log("*********** fin technologies *****************");
   <div
     class=`flex gap-2 items-center justify-center lg:justify-between flex-wrap p-0 m-0 text-${text_color}`
   >
-    <!-- <div class="flex gap-1 pb-1.5 items-center">       -->
-      {
-        technologies?.map((technology: any) => (
-          <ArticleProjectTechnology technology={technology} />
-        ))
-      }
-    <!-- </div> -->
+    {
+      technologies?.map((technology: any) => (
+        <ArticleProjectTechnology technology={technology} />
+      ))
+    }
   </div>
 </article>

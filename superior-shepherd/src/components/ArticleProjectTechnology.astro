@@ -2,34 +2,9 @@
 import { Icon } from "astro-icon";
 
 const { technology } = Astro.props;
-
-const { image, name, size} = technology;
-
-console.log("********************************** inicio size **********************************");
-console.log(size);
-console.log("********************************** fin size **********************************")
-
-// const { width, height } = {...size};
-
-const { width = '40px', height = '40px' } = size || {};
-
-// const  width = "80px";
-// const height = "80px";
-
-
+const { image, name, size } = technology;
+const { width = "40px", height = "40px" } = size || {};
 ---
-
-<!-- <div class="relative group text-center">
-  <Icon
-    name={image}
-    class=`${paddingAndMargin} transition-all duration-500 ease-in-out group-hover:-translate-y-2`
-  />
-  <p
-    class="absolute top-0 w-full text-center text-xs font-semibold mt-3 opacity-0 transition-opacity duration-0 group-hover:translate-y-full group-hover:opacity-100 group-hover:duration-500"
-  >
-    {name}
-  </p>
-</div> -->
 
 <div class="relative group">
   <Icon
@@ -40,14 +15,6 @@ const { width = '40px', height = '40px' } = size || {};
   <p
     class="absolute top-0 w-full text-center text-xs font-semibold mt-3.5 opacity-0 transition-opacity duration-0 group-hover:translate-y-full group-hover:opacity-100 group-hover:duration-500"
   >
-  {name}
+    {name}
   </p>
 </div>
-
-
-<!-- <style lang="css">
-  [astro-icon] {
-    width: 40px;
-    height: 40px;
-  }
-</style> -->

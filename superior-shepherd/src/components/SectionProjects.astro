@@ -1,42 +1,37 @@
 ---
 import project from "../data/project";
-
 import ArticleProject from "./ArticleProject.astro";
-import ArticleProjectLicProv from "./ArticleProjectLicProv.astro";
-import ArticleProjectContrib from "./ArticleProjectContrib.astro";
-import ArticleProjectRrhh from "./ArticleProjectRrhh.astro";
-import ArticleProjectChat from "./ArticleProjectChat.astro";
 ---
 
 <section class="mt-12 px-7 mx-7 max-w-[1000px] mx-auto">
   <h1
     class="mb-4 text-df-text underline underline-offset-8 text-2xl font-extrabold leading-none tracking-tight md:text-3xl lg:text-4xl"
   >
-
-   
     Proyectos
   </h1>
   <p class="text-df-text mt-5 mb-3">Algunos de mis trabajos</p>
 
   <div id="cards">
     {
-      project.map(({title, description, bg_color, text_color, images, technologies}, index) => {
-        return (
-          <div class="card" id={`card_${index}`}>
-            <ArticleProject
-              title={title}
-              description={description}
-              bg_color={bg_color}
-              text_color={text_color}
-              images={images}
-              technologies = {technologies}
-            />
-          </div>
-        );
-      })
+      project.map(
+        (
+          { title, description, bg_color, text_color, images, technologies },
+          index
+        ) => {
+          return (
+            <div class="card" id={`card_${index}`}>
+              <ArticleProject
+                title={title}
+                description={description}
+                bg_color={bg_color}
+                text_color={text_color}
+                images={images}
+                technologies={technologies}
+              />
+            </div>
+          );
+        }
+      )
     }
-
-      
-    
   </div>
 </section>
