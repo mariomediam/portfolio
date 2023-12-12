@@ -3,7 +3,7 @@ import skill from "../data/skill";
 import ArticleSkill from "./ArticleSkill.astro";
 ---
 
-<section class="bg-dfBgSection mt-12 pt-8 pb-10 px-8 mx-8">
+<section class="bg-dfBgSection mt-12 pt-8 pb-10 px-8">
   <h1
     class="mb-6 text-dfText text-center underline underline-offset-8 text-2xl font-extrabold leading-none tracking-tight md:text-3xl lg:text-4xl"
   >
@@ -14,20 +14,15 @@ import ArticleSkill from "./ArticleSkill.astro";
   <div
     class=`flex gap-8 items-center justify-center flex-wrap pt-6 text-dfText`
   >
-    {
-      skill.map((ability) => (
-        <ArticleSkill ability={ability} />
-      ))
-    }
+    {skill.map((ability) => <ArticleSkill ability={ability} />)}
   </div>
 </section>
 
 <script src="/css/atropos.min.js" is:inline></script>
 <script>
+  import Atropos from "atropos";
 
-  import Atropos from 'atropos';
-
-  const elements = document.querySelectorAll('.my-atropos');
+  const elements = document.querySelectorAll(".my-atropos");
   elements.forEach((el) => {
     Atropos({ el: el as HTMLElement });
   });
