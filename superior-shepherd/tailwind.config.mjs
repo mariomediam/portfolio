@@ -14,6 +14,8 @@ export default {
 				DEFAULT: '#FCCC71',
 				dark: '#d1ab65',
 			  },
+			'dfGrey': "#303341",
+
 		  },
 		},
 	  },

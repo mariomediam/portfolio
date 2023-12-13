@@ -14,21 +14,34 @@ import { Icon } from "astro-icon";
         >mariomedinam@gmail.com</span
       > o sigueme en:
     </p>
-    <a href="https://github.com/mariomediam/portfolio" target="_blank" rel="noopener noreferrer">
-      <Icon name="github" class="p-0 m-0 me-2" />
-    </a>
-    <a href="https://www.linkedin.com/in/mario-medina-265147254" target="_blank" rel="noopener noreferrer">
-      <Icon name="linkedin" class="p-0 m-0" />
-    </a>
-    
+    <div class="button-social-media">
+      <a
+        href="https://www.linkedin.com/in/mario-medina-265147254"
+        class="social-link1"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Icon name="linkedin" class="p-0 m-0 text-dfText" />
+      </a>
+      <a
+        href="https://github.com/mariomediam/portfolio"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="social-link2"
+      >
+        <Icon name="github" class="p-0 m-0" />
+      </a>
+    </div>
   </div>
+
+  
 </section>
 
 <style lang="css">
   [astro-icon] {
     width: 40px;
     height: 40px;
-    color: #F4AC39;    
-    fill: #F4AC39;
+    /* color: #f4ac39;
+    fill: #f4ac39; */
   }
 </style>
