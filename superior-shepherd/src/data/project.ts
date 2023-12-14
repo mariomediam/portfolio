@@ -93,7 +93,7 @@ const project = [
     title: "Recibos de salario",
     description:
       "Permite la generación y envío de recibos de salario en formato PDF firmado digitalmente, permitiendo un ahorro sustancial de recursos como papel y personal, al mismo tiempo que maximiza la eficiencia al eliminar la necesidad de desplazamientos físicos para la obtención de recibos.",
-    bg_color: "dfYellow-dark",
+    bg_color: "dfYellowdark",
     text_color: "dfBackground",
     images: [
       "/assets/screens/rrhh1.webp",

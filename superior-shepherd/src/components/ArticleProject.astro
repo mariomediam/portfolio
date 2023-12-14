@@ -11,12 +11,15 @@ const {
   technologies = [],
 } = Astro.props;
 
-console.log(`bg-${bg_color} md:grid md:grid-rows-[1fr_min-content] md:grid-cols-[2fr_3fr] rounded-lg p-6 gap-4 my-6`)
+const card_color = {
+  dfTitle: "bg-dfTitle md:grid md:grid-rows-[1fr_min-content] md:grid-cols-[2fr_3fr] rounded-lg p-6 gap-4 my-6",
+  dfBackground: "bg-dfBackground md:grid md:grid-rows-[1fr_min-content] md:grid-cols-[2fr_3fr] rounded-lg p-6 gap-4 my-6",
+  dfYellowdark: "bg-dfYellow-dark md:grid md:grid-rows-[1fr_min-content] md:grid-cols-[2fr_3fr] rounded-lg p-6 gap-4 my-6",
+  dfBgSection: "bg-dfBgSection md:grid md:grid-rows-[1fr_min-content] md:grid-cols-[2fr_3fr] rounded-lg p-6 gap-4 my-6",
+}
 ---
 
-<article
-  class=`bg-${bg_color} md:grid md:grid-rows-[1fr_min-content] md:grid-cols-[2fr_3fr] rounded-lg p-6 gap-4 my-6`
->
+<article className={`${card_color[bg_color]} ...`}>
   <!-- Title and description -->
   <div class=`flex flex-col justify-center h-full text-${text_color}`>
     <h3

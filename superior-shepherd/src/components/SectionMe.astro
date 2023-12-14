@@ -9,12 +9,23 @@
     Sobre mi
   </h1>
   <div class="lg:flex">
-    <div class="flex justify-center lg:p-10">
-      <img
+    <div class="static flex justify-center lg:p-10">
+      <!-- <img
         src="./assets/selfie.webp"
         alt="Mario Medina"
         class="h-auto max-w-xs"
-      />
+      /> -->
+      <div class="relative parent-photo">
+        <a href="#" class="photo">
+          <div class="glow-wrap">
+            <img src="./assets/selfie.webp" />
+            <i class="glow">
+    
+    
+            </i>
+          </div>
+        </a>
+      </div>
     </div>
 
     <div class="flex flex-col gap-3">
@@ -49,3 +60,61 @@
     </div>
   </div>
 </section>
+
+<style>
+
+  .parent-photo {
+    width: 300px;
+    height: 420px;
+  }
+  .photo {
+    position: absolute;
+    width: 300px;
+    height: 420px;
+    
+  }
+
+  .photo img {
+    padding: 10px;
+    width: 300px;
+    height: 420px;
+    object-fit: cover;    
+    box-shadow: 10px 15px 25px 0 rgba(0, 0, 0, 0.2);
+    display: block;
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+    margin-top: -10px;
+  }
+
+  .photo:hover img {
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .photo .glow-wrap {
+    overflow: hidden;
+    position: absolute;    
+    top: 0;
+    margin-top: -10px;    
+  }
+
+  .photo .glow {
+    display: block;
+    position: absolute;
+    width: 40%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.2);
+    top: 0;
+    filter: blur(5px);
+    transform: rotate(45deg) translate(-450%, 0);
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+
+  .photo:hover .glow {
+    transform: rotate(45deg) translate(450%, 0);
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+
+  .photo:hover img,
+  .photo:hover .glow-wrap {
+    margin-top: 0;
+  }
+</style>
