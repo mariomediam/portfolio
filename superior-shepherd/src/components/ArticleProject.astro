@@ -11,7 +11,7 @@ const {
   technologies = [],
 } = Astro.props;
 
-const card_color = {
+const card_color: Record<string, string>= {
   dfTitle: "bg-dfTitle md:grid md:grid-rows-[1fr_min-content] md:grid-cols-[2fr_3fr] rounded-lg p-6 gap-4 my-6",
   dfBackground: "bg-dfBackground md:grid md:grid-rows-[1fr_min-content] md:grid-cols-[2fr_3fr] rounded-lg p-6 gap-4 my-6",
   dfYellowdark: "bg-dfYellow-dark md:grid md:grid-rows-[1fr_min-content] md:grid-cols-[2fr_3fr] rounded-lg p-6 gap-4 my-6",
