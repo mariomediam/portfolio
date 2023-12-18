@@ -2,19 +2,21 @@
 import { Icon } from "astro-icon";
 ---
 
-<section id="sectionContacMe" class="bg-dfBgSection text-dfText pt-16 pt-8 pb-10 px-8">
+<section id="sectionContacMe" class="bg-dfBgSection text-dfText py-16 px-8 ">
   <h1
-    class="mb-6 underline underline-offset-8 text-2xl font-extrabold leading-none tracking-tight md:text-3xl lg:text-4xl"
+    class="mb-5 underline underline-offset-8 text-2xl font-extrabold leading-none tracking-tight md:text-3xl lg:text-4xl"
   >
     Contáctame
   </h1>
-  <div class="flex items-center">
-    <p class="me-2">
+  <div class="flex flex-col md:flex-row items-center" >
+    <div>
+    <p class="me-2 text-balance">
       Ponte en contacto conmigo en <span class="text-dfLink"
         >mariomedinam@gmail.com</span
       > o sigueme en:
     </p>
-    <div class="button-social-media">
+  </div>
+    <div class="button-social-media  flex justify-center md:justify-start" >
       <a
         href="https://www.linkedin.com/in/mario-medina-265147254"
         class="social-link1"
