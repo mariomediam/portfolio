@@ -2,5 +2,5 @@
 const { image } = Astro.props;
 ---
 <div class="md:row-span-2 p-3">
-    <img class="w-auto h-full" src={image} alt="image description">
+    <img class="w-auto h-full" src={image.path} alt={image.altText}>
 </div>

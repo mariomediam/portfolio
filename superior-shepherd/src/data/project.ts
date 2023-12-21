@@ -6,10 +6,10 @@ const project = [
     bg_color: "dfTitle",
     text_color: "dfBackground",
     images: [
-      "/assets/screens/provisional1.webp",
-      "/assets/screens/provisional2.webp",
-      "/assets/screens/provisional3.webp",
-      "/assets/screens/provisional4.webp",
+      {path: "/assets/screens/provisional1.webp", altText:"Formulario licencia provisional"},
+      {path: "/assets/screens/provisional2.webp", altText:"Formulario licencia provisional"},
+      {path: "/assets/screens/provisional3.webp", altText:"Formulario licencia provisional"},
+      {path: "/assets/screens/provisional4.webp", altText:"Formulario licencia provisional"},
     ],
     technologies: [
       {
@@ -50,11 +50,11 @@ const project = [
       "Sistema para la gestión de contribuyentes, integrado con el Registro Nacional de Identificación y Estado Civil (RENIEC) y la Superintendencia Nacional de Aduanas y de Administración Tributaria (SUNAT) minimizando de manera significativa los riesgos de datos incorrectos, fortaleciendo así la eficacia de la administración tributaria",
     bg_color: "dfBgSection",
     text_color: "dfText",
-    images: [
-      "/assets/screens/contribuyentes1.webp",
-      "/assets/screens/contribuyentes2.webp",
-      "/assets/screens/contribuyentes3.webp",
-      "/assets/screens/contribuyentes4.webp",
+    images: [      
+      {path: "/assets/screens/contribuyentes1.webp", altText:"Formulario contribuyente"},
+      {path: "/assets/screens/contribuyentes2.webp", altText:"Formulario contribuyente"},
+      {path: "/assets/screens/contribuyentes3.webp", altText:"Formulario contribuyente"},
+      {path: "/assets/screens/contribuyentes4.webp", altText:"Formulario contribuyente"},
     ],
     technologies: [
       {
@@ -96,9 +96,9 @@ const project = [
     bg_color: "dfYellowdark",
     text_color: "dfBackground",
     images: [
-      "/assets/screens/rrhh1.webp",
-      "/assets/screens/rrhh2.webp",
-      "/assets/screens/rrhh3.webp",
+      {path: "/assets/screens/rrhh1.webp", altText:"Formulario recibos de salario"},
+      {path: "/assets/screens/rrhh2.webp", altText:"Formulario recibos de salario"},
+      {path: "/assets/screens/rrhh3.webp", altText:"Formulario recibos de salario"},      
     ],
     technologies: [
       {
@@ -139,7 +139,7 @@ const project = [
       "Entrenado con los procedimientos administrativos y servicios exclusivos ofrecidos por la Municipalidad, permite a los ciudadanos realizar consultas en lenguaje natural, simplificando drásticamente la comprensión y navegación a través de la complejidad de la información administrativa.",
     bg_color: "dfTitle",
     text_color: "dfBackground",
-    images: ["/assets/screens/chat1.webp"],
+    images: [{path: "/assets/screens/chat1.webp", altText:"Formulario chatbot inteligente"},],
     technologies: [
       {
         image: "react",
